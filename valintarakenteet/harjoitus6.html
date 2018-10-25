@@ -7,18 +7,18 @@
 <body>
 <h1>Onko vuosi karkausvuosi</h1>
 <script>
-    'use strict';
-    let vuosi = +prompt('Anna vuosiluku');
+  'use strict';
+  let vuosi = +prompt('Anna vuosiluku');
 
-    if (vuosi%4===0) {
-      alert('Vuosi ' + vuosi + ' on karkausvuosi');
-    }
-    else if (vuosi%100===0 && vuosi%400===0) {
-      alert('Vuosi ' + vuosi + ' on karkausvuosi.');
-    }
-    else {
-      alert('Vuosi ' + vuosi + ' ei ole karkausvuosi.');
-    }
+  if (vuosi % 400 == 0) {
+    alert('Vuosi ' + vuosi + ' on karkausvuosi');
+  }
+  else if (vuosi % 4 == 0 && vuosi % 100 !== 0) {
+    alert('Vuosi ' + vuosi + ' on karkausvuosi.');
+  }
+  else {
+    alert('Vuosi ' + vuosi + ' ei ole karkausvuosi.');
+  }
 
 </script>
 </body>
