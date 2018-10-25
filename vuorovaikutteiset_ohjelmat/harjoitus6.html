@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-6</title>
+</head>
+<body>
+<h1>Harjoitus-6</h1>
+
+<script>
+    'use strict';
+    let luoti = 13.3;
+    let naula = (32 * luoti);
+    let leiviska = (20 * naula);
+
+    let lkmLei = +prompt('Kuinka monta leiviskää');
+    let lkmNau = +prompt('Kuinka monta naulaa');
+    let lkmLuo = +prompt('Kuinka monta luotia');
+
+    let paino = lkmLei * leiviska + lkmLuo * luoti + lkmNau * naula;
+    let kilo = (Math.floor(paino/1000));
+    let gramma = paino - kilo * 1000;
+
+
+    alert('Kiloja ' + kilo + ' ja grammoja ' + gramma.toFixed(2));
+
+</script>
+
+
+</body>
+</html>

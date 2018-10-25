@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-7</title>
+</head>
+<body>
+<h1>Harjoitus-7</h1>
+
+<script>
+    'use strict';
+    let saldo = +prompt('Kuinka paljon tililläsi on rahaa (euroja)?');
+    let korko = +prompt('Mikä on tilin vuotuinen korko (prosentteja)?');
+
+    let koronmaara = (korko/100) * saldo;
+    let uusiSaldo = saldo + koronmaara;
+
+    alert('Koron määrä ' + koronmaara.toFixed(2) + '€' + '\nUusi tilin saldo ' + uusiSaldo.toFixed(2) + '€');
+
+</script>
+
+</body>
+</html>
