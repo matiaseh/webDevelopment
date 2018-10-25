@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-4</title>
+</head>
+<body>
+<h1>Onko varaa bussilippuun</h1>
+<script>
+    'use strict';
+    let rahat = +prompt('Paljonko lompakossasi on rahaa? (euroja)');
+    let hinta = +prompt('Paljonko bussilippu maksaa?');
+
+    if (rahat >= hinta) {
+      rahat -= hinta;
+      alert('Rahasi riittävät lippuun, hyvää matkaa!');
+    }
+    else if (rahat < hinta) {
+      alert('Et saa lippua ostettua, mene töihin!');
+    }
+
+    alert('Lompakkoosi jäi ' + rahat + ' euroa.');
+
+</script>
+
+</body>
+</html>

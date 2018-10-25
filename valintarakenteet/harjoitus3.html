@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-3</title>
+</head>
+<body>
+<h1>Hemoglobiiniarvon laskeminen</h1>
+
+<script>
+    'use strict';
+    let gender = prompt('Oletko mies/nainen?');
+    let arvo = +prompt('Mikä on hemoglobiiniarvosi? (g/l)');
+
+    if (gender === 'mies') {
+      if (arvo >= 134 && arvo <= 195 ) {
+        alert('Sinulla on normaali hemoglobiini!');
+      }
+      else if (arvo < 134) {
+        alert('Sinulla on alhainen hemoglobiini.');
+      }
+      else if (arvo > 195) {
+        alert('Sinulla on korkea hemoglobiini.');
+      }
+
+    }
+
+    else if (gender === 'nainen') {
+      if (arvo >= 117 && arvo <= 175 ) {
+        alert('Sinulla on normaali hemoglobiini!');
+      }
+      else if (arvo < 134) {
+        alert('Sinulla on alhainen hemoglobiini.');
+      }
+      else if (arvo > 175) {
+        alert('Sinulla on korkea hemoglobiini.');
+      }
+
+    }
+
+    else {
+      alert('Tarkista sukupuolesi!');
+    }
+
+
+</script>
+
+</body>
+</html>
