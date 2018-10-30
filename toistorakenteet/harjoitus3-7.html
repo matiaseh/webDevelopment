@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-7</title>
+</head>
+<body>
+<h1>Arvotaan bingolapun numerot</h1>
+
+<script>
+    'use strict';
+    const luvut = 25;
+    let arpa;
+    let luku;
+
+    for ( let i=1; i<=luvut ; i++) {
+      luku = Math.floor(Math.random() * 4 +1);
+
+      switch (luku) {
+
+        case 1:
+          arpa = 4 * i;
+          break;
+
+        case 2:
+          arpa = 4 * i - 1;
+          break;
+
+        case 3:
+          arpa = 4 * i - 2;
+          break;
+
+
+        case 4:
+          arpa = 4 * i - 3;
+          break;
+
+      }
+      document.write('<p>' + arpa + '</p>');
+    }
+
+</script>
+</body>
+</html>
