@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-6</title>
+</head>
+<body>
+<h1>Arpakuutiot</h1>
+
+<script>
+    'use strict';
+    const lkm = +prompt('Anna noppien lukumäärä');
+    const summa = +prompt('Tavoiteltu silmälukujen summa?');
+    const setti = +prompt('Kuinka monta settiä tehdään?');
+
+    let muisti = 0;
+    let i;
+    let j;
+    for ( i = 1; i<=setti ; i++) {
+      let sum = 0;
+      for (j = 1; j <= lkm; j++) {
+        let luku = Math.floor(Math.random() * 6 + 1);
+        sum += luku;
+        //alert(luku + '\n' + sum);
+      }
+      if ( sum === summa) {
+          muisti += 1;
+          //alert('moi' + muisti);
+      }
+        //alert(luku + '\n' + sum);
+
+      }
+
+    //alert(muisti)
+    let tod = muisti / setti;
+    alert('Todennäköisyys on ' + tod);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-2</title>
+</head>
+<body>
+<h1>Neliöjuuren laskeminen.</h1>
+
+<script>
+    'use strict';
+    let luku = +prompt('Anna luku jonka neliöjuuri lasketaan');
+
+    while (luku < 0) {
+      luku = prompt('Syötit negatiivisen luvun, syötä positiivinen luku');
+    }
+
+    let sqrt = Math.sqrt(luku);
+    alert('Luvun ' + luku + ' neliöjuuri on ' + sqrt.toFixed(6));
+
+</script>
+</body>
+</html>

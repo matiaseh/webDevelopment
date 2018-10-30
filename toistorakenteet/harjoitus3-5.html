@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-5</title>
+</head>
+<body>
+<h1>Onko luku alkuluku</h1>
+
+<script>
+    'use strict';
+    const luku = +prompt('Anna kokonaisluku');
+
+    if (luku > 1) {
+
+      let tulo = 1;
+      let i;
+
+      for (i = 1; i<=luku ; i++) {
+
+        if ( luku % i === 0) {
+          tulo = tulo * i;
+        }
+      }
+
+      if ( luku === tulo) {
+        alert('Luku on alkuluku');
+      }
+      else {
+        alert('Luku ei alkuluku');
+      }
+    }
+
+    else if (luku === 1) {
+      alert('Luku ei alkuluku');
+    }
+    else {
+      alert('Syötä positiivinen kokonaisluku!');
+    }
+
+
+</script>
+</body>
+</html>

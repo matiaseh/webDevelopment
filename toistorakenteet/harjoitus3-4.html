@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-4</title>
+</head>
+<body>
+<h1>Heitetään noppia</h1>
+
+<script>
+    'use strict';
+    let lkm = +prompt('Kuinka montaa noppaa heitetään?');
+    let tulo = 0;
+
+    let i;
+    for (i=1; i<=lkm ; i++){
+      let luku = Math.floor(Math.random() * 6 + 1);
+      tulo += luku;
+      alert(luku);
+
+    }
+    alert(tulo);
+
+</script>
+</body>
+</html>

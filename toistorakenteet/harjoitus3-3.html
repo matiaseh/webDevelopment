@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus3-3</title>
+</head>
+<body>
+<h1>Aloitus ja lopetusvuosi</h1>
+
+<script>
+    'use strict';
+    const alku = +prompt('Anna aloitusvuosi');
+    const loppu = +prompt('Anna lopetusvuosi');
+
+    document.write('<ul>');
+
+    let i;
+    if (alku >= 0 && loppu >= 0) {
+      for (i = alku; i <= loppu ; i++) {
+        if (i % 400 === 0) {
+          document.write('<li>' + i + '</li>');
+        }
+        else if (i % 4 === 0 && i % 100 !== 0) {
+          document.write('<li>' + i + '</li>');
+        }
+      }
+    }
+    else {
+      alert('Et syöttänyt kunnollisia vuosilukuja');
+    }
+
+    document.write('</ul>');
+
+
+</script>
+</body>
+</html>
