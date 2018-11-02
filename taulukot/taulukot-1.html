@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-1</title>
+</head>
+<body>
+<h1>Viisi lukua järjestykseen</h1>
+
+<script>
+    'use strict';
+
+    let luvut = [];
+    let luku, i;
+
+    for (i=0; i<=4 ; i++) {
+      luku = prompt('Anna luku');
+      luvut[i] = luku;
+    }
+
+    luvut.reverse();
+
+    for (i=0; i<=4 ; i++) {
+      document.write('<p>' + luvut[i] + '</p>');
+    }
+
+</script>
+
+</body>
+</html>

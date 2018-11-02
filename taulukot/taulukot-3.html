@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-3</title>
+</head>
+<body>
+<h1>Koirien nimet</h1>
+
+<script>
+    'use strict';
+
+    let i, nimi;
+    let nimet = [];
+
+    for (i=0; i<=5 ; i++) {
+      nimi = prompt('Anna koiran nimi');
+      nimet[i] = nimi;
+    }
+
+    nimet.sort();
+    nimet.reverse();
+
+    for (i=0; i<=4 ; i++) {
+      document.write('<p>' + nimet[i] + '</p>');
+    }
+
+</script>
+</body>
+</html>

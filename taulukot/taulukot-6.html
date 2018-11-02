@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-6</title>
+</head>
+<body>
+<h1>Mediaani</h1>
+
+<script>
+  'use strict';
+  let i, luku;
+  let lkm = 0;
+  let luvut = [];
+
+  luku = +prompt('Syötä luku');
+  luvut[lkm] = luku;
+
+  while (luku !== 0) {
+    luku = +prompt('Syötä luku');
+    if (luku !== 0) {
+      lkm = lkm + 1;
+      luvut[lkm] = luku;
+    }
+    else if (luku === 0) {
+      alert('Ohjelma on pysähtynyt.');
+      break;
+    }
+  }
+
+  let mediaani = 0, length = luvut.length;
+  luvut.sort();
+
+  if (length % 2 === 0) { //parillinen
+    mediaani = (luvut[length / 2 -1] + luvut[length / 2]) / 2;
+  }
+  else { //pariton
+    mediaani = luvut[(length -1) / 2];
+  }
+
+  alert('Syötettyjen lukujen mediaani on' + mediaani);
+
+
+  for (i=0; i<=lkm ; i++) {
+    document.write('<p>' + luvut[i] + '</p>');
+  }
+
+
+</script>
+
+</body>
+</html>
