@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus9</title>
+</head>
+<body>
+<h1>Fibonaccin lukujono nuolifunktiona</h1>
+
+<script>
+
+  'use strict';
+  let fibonacci = (numb) =>
+  {
+    if (numb <= 1) {
+      return 1;
+    }
+    return fibonacci(numb - 1) + fibonacci(numb - 2);
+  }
+
+  let luku = +prompt('Monennenko Fibonaccin lukujonossa esiintyvän luvun haluat?');
+  alert(fibonacci(luku-1));
+
+
+
+</script>
+</body>
+</html>

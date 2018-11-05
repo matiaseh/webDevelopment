@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus6</title>
+</head>
+<body>
+<h1>Luvut vastaluvuiksi</h1>
+
+<script>
+    'use strict';
+
+    function vastaluvuiksi(luvut) {
+      let i;
+      for (i=0; i<luvut.length ; i++) {
+        luvut[i] = -Math.abs(luvut[i]);
+      }
+    }
+
+    let lukuja = [1,2,3,4,5,6,7,8,9];
+    vastaluvuiksi(lukuja);
+
+    for (let j = 0; j<lukuja.length ; j++) {
+      document.write('<p>'+lukuja[j]+'</p>');
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus4</title>
+</head>
+<body>
+<h1>Palauttaa suurimman luvun</h1>
+
+<script>
+    'use strict';
+
+    function suurin(luku1, luku2, luku3) {
+      return Math.max(luku1, luku2, luku3);
+    }
+
+    let luku1, luku2, luku3;
+    luku1= +prompt('Anna ensimmäinen luku');
+    luku2 = +prompt('Anna toinen luku');
+    luku3 = +prompt('Anna kolmas luku');
+
+    let max = suurin(luku1, luku2, luku3);
+    alert('Suurin luvuista on ' + max);
+
+
+
+</script>
+
+</body>
+</html>

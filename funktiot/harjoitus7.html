@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HArjoitus7</title>
+</head>
+<body>
+<h1>Parilliset luvut</h1>
+
+<script>
+    'use strict';
+
+
+    function parillisiksi(lukuja) {
+      let parilliset = [];
+      for (let i = 0; i<=lukuja.length ; i++) {
+        if (lukuja[i] % 2 === 0) {
+          parilliset[i] = lukuja[i];
+        }
+      }
+      return parilliset;
+    }
+
+    let lista = [2,3,0];
+    let par = parillisiksi(lista);
+    alert(par);
+
+
+
+</script>
+
+</body>
+</html>

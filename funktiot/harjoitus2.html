@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus2</title>
+</head>
+<body>
+<h1>Muunnos parametrina</h1>
+
+<script>
+    'use strict';
+
+    function muunnos(gal) {
+      let litra = 3.785 * gal;
+      return litra;
+
+    }
+
+    let gal = +prompt('Anna bensan määrä galloonissa');
+    let lit = muunnos(gal);
+    alert(gal + ' galloonaa on ' + lit + ' litraa.');
+
+</script>
+
+</body>
+</html>

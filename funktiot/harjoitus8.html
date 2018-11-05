@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus8</title>
+</head>
+<body>
+<h1>Fibonaccin lukujono</h1>
+
+<script>
+    'use strict';
+
+
+
+    function fibonacci(luku) {
+      if (luku <= 1) {
+        return 1;
+      }
+      return fibonacci(luku - 1) + fibonacci(luku - 2);
+    }
+
+    let nro = +prompt('Monennenko Fibonaccin lukujonossa esiintyvän luvun haluat?');
+    let fibo = fibonacci(nro - 1);
+
+    alert(fibo);
+
+</script>
+
+</body>
+</html>
