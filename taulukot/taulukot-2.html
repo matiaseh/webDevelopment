@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +27,34 @@
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-2</title>
+</head>
+<body>
+<h1>Osallistujien nimet</h1>
+
+<script>
+    'use strict';
+    let nimet = [];
+    let i, nimi, lkm;
+
+    lkm = +prompt('Kuinka monta osallistujaa?');
+
+    document.write('<ol>');
+
+    for (i=0; i<=(lkm-1) ; i++) {
+      nimi = prompt('Syötä osallistujan nimi.');
+      document.write('<li>' + nimi + '</li>');
+    }
+
+    document.write('</ol>');
+
+</script>
+
+</body>
+>>>>>>> origin/master
 </html>
