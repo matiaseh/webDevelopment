@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harjoitus-1</title>
+</head>
+<body>
+
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+
+<script>
+
+  document.getElementById('berry').style.backgroundColor = 'red';
+  console.log(document.getElementById('berry'));
+  console.log('I found the berry: ' + document.getElementById('berry').innerHTML);
+
+  document.querySelector('li[data-foodtype = squishy]').setAttribute('style', 'background-color: orange');
+  console.log(document.querySelector('li[data-foodtype = squishy]'));
+  console.log('I found the fruit: ' + document.querySelector('li[data-foodtype = squishy]').innerHTML);
+
+  let col = document.getElementsByTagName('li');
+  console.log(col);
+
+  console.log(document.querySelectorAll('ul')[0]);
+
+  let l = col.length;
+  let i;
+  for (i=0; i<l ; i++) {
+    col[3].style.backgroundColor = 'lightgreen';
+    col[i].style.width = '100px';
+    col[i].style.listStyleType = 'none';
+    console.log(col[i]);
+  }
+
+  console.log(document.querySelectorAll('li'));
+
+  let fruits = document.querySelectorAll('li');
+
+  fruits.forEach((list) => {
+    list.style.border = 'solid';
+    console.log(list);
+  });
+
+</script>
+
+</body>
+</html>
